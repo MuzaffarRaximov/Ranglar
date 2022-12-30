@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mashg'ulot</title>
+</head>
+<style>
+    #sayt{
+        width: 600px;
+        height: 600px;
+        border: 1px solid ;
+        justify-content: center;
+        
+    }
+    #saytt{
+        width: 200px;
+        height: 200px;
+        border: 1px solid;
+        margin-top: 50px;
+        margin-left: 30px;
+        padding: 10px;
+        float: left;
+        
+
+    }
+
+    #sayt3{
+        justify-content: center;
+        margin-top: 17px;
+        
+    }
+    h2{
+        
+        margin-left: 120px;
+        margin-top: 40px;
+        float: left;
+        
+        
+    }
+    p{
+        margin-top: 110px;
+        padding: 5px;
+    }
+    #f1{
+        background-color: yellow;
+    }
+    #f2{
+        background-color: red;
+    }
+    #f3{
+        background-color: blue;
+    }
+    #f4{
+        background-color: gray;
+    }
+    .AA{
+        display: inline-block;
+        margin-top: 50PX;
+        margin-left: 30PX;
+    }
+    .AA:hover{
+     cursor: pointer;
+    }
+</style>
+<script>
+    
+    function saytm(r){
+       var matn= document.getElementById("saytt");
+       matn.style. backgroundColor=r;
+    }
+
+     let y=14;
+function katta(){
+    y=y+2;
+    document.body.style.fontSize=y+"px";
+
+}
+function kichik(){
+    y=y-2;
+    document.body.style.fontSize=y+"px";
+
+}
+function orta(){
+    
+    document.body.style.fontSize="16px";
+
+}
+</script>
+<body>
+    <div id="sayt">
+        <h1 align="center">Ranglar olami</h1>
+        <div id="saytt">.</div>
+        <h2>ranglar</h2>
+        <p id="ss">Lorem ipsum, dolor sit amet consectetur 
+            adipisicing elit. Alias provident dicta
+             sunt, enim ad fuga iusto consectetur
+              itaque. Neque, illo. Lorem ipsum dolor,
+              sit amet consectetur adipisicing elit.
+               Beatae repellendus, aut iure, itaque
+                doloremque minus hic animi, placeat
+                 et tempore nulla. Similique perferendis
+                  cumque at asperiores doloremque illo 
+                  fugit pariatur, consequatur voluptatibus
+                   rem sit magni ipsam accusamus rerum est id, 
+                   soluta iusto. Mollitia modi esse obcaecati 
+                   officia animi placeat 
+            </p>
+              <h1 class="AA" onclick=" katta()">A+</h1>
+              <h1 class="AA" onclick="orta()">A</h1>
+              <h1 class="AA" onclick=" kichik()">A-</h1>
+               
+         <table id="sayt3" width="600px" height="100px" border="1px">
+            <tr >
+                <td id="f1" onclick="saytm('yellow')" > .</td>
+                <td onclick="saytm('red')" id="f2"> . </td>
+                <td onclick="saytm('blue')" id="f3">.</td>
+                <td onclick="saytm('grey')" id="f4">.</td>
+                 
+            </tr>
+           
+         </table>
+    </div>
+    
+</body>
+</html>
